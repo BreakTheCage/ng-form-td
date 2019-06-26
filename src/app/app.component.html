@@ -79,7 +79,16 @@
           >Submit</button>
       </form>
       <hr>
+    </div>
+  </div>
+  <div class="row" *ngIf="submitted">
+    <div class="col-xs-12">
       <h3>Your Data</h3>
+      <p>User Name: {{ user.username  }}</p>
+      <p>Mail Address: {{ user.email  }}</p>
+      <p>Secrete Question: Your First {{ user.secretQuestion  }}?</p>
+      <p>Answer Question: {{ user.answer  }}</p>
+      <p>Gender: {{ user.gender  }}</p>
     </div>
   </div>
 </div>
